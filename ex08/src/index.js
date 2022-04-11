@@ -4,11 +4,7 @@ function myObject(){
         E: 2.71828
     };
 
-    Object.freeze(myObject);
-    myObject.review = "bad";
-    myObject.newProp = "Test";
-    console.log(myObject);
-
+    Object.freeze(MATH_CONSTANTS);
 
     try {
         MATH_CONSTANTS.E = 23;
@@ -20,4 +16,5 @@ function myObject(){
 }
 
 const E = myObject();
+console.log(E);
 module.exports = myObject;
